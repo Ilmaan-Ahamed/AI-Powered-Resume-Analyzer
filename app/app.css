@@ -27,7 +27,7 @@ main {
   @apply min-h-screen pt-10;
 }
 h1 {
-  @apply text-6xl  text-gradient leading-tight tracking-[-2px] font-semibold;
+  @apply text-6xl text-gradient leading-tight tracking-[-2px] font-semibold;
 }
 
 h2 {
@@ -54,7 +54,8 @@ form {
     @apply bg-clip-text text-transparent bg-linear-to-r from-[#AB8C95] via-[#000000] to-[#8E97C5];
   }
   .gradient-border {
-    @apply bg-linear-to-brom-light-blue-100 to-light-blue-200 p-4 rounded-2xl;
+    /* ✅ Fixed: was "bg-linear-to-brom-light-blue-100" (typo) */
+    @apply bg-linear-to-br from-light-blue-100 to-light-blue-200 p-4 rounded-2xl;
   }
   .primary-button {
     @apply primary-gradient text-white rounded-full px-4 py-2 cursor-pointer w-full;
@@ -81,7 +82,7 @@ form {
     @apply flex flex-col items-center gap-8 max-w-4xl text-center;
   }
   .resumes-section {
-    @apply flex flex-wrap max-lg:flex-col gap-6 items-start  w-full max-w-462.5 justify-evenly;
+    @apply flex flex-wrap max-lg:flex-col gap-6 items-start w-full max-w-462.5 justify-evenly;
   }
 
   .resume-card {
@@ -109,7 +110,7 @@ form {
   }
 
   .uplader-drag-area {
-    @apply relative p-8 text-center transition-all duration-700 cursor-pointer bg-white rounded-2xl min-h-52
+    @apply relative p-8 text-center transition-all duration-700 cursor-pointer bg-white rounded-2xl min-h-52;
   }
   .uploader-selected-file {
     @apply flex items-center justify-between p-3 bg-gray-50 rounded-2xl;
